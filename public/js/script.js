@@ -1,14 +1,14 @@
 const toggle = document.querySelector('.toggle')
 const navigation = document.querySelector('.navigation')
 
-// arrays for boxes
+// arrays for amount of boxes
 
 var boxes = [1,2,3,4,5,6]
     boxesAmount = boxes.length;
 
-// dictionary for items so you can search fo key (Box 1) and show all items for that key 
-// (if 2 times the same it shoud do an amount counter behind the items name)
-// shoud safe all this shit in DB so it wont lose all data when recratet.
+// dictionary for items so you can search fo key (Box 1) and show all items for that key !!!!!!!!!!!!!!!!!!!!!!!!!
+// (if 2 times the same it shoud do an amount counter behind the items name) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// shoud safe all this shit in DB so it wont lose all data when recratet. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 var items = ["Klimaanlagen dingsda"]
     itemsAmount = items.length;
@@ -28,11 +28,16 @@ for (i = 0; i < boxesAmount; i++) {
     var newList= document.createElement("ul");
     newList.id = "items";
     var newListElement = document.createElement("li");
-    //maybe for more than 4 items add a "more..." Link and a own page for each "box"? and  only show the first first XXX Letters
+
+    //maybe for more than 4 items add a "more..." Link and a own page for each "box"? and  only show the first first XXX Letters !!!!!!!
+
     newElement.append(newList);
     newList.append(newListElement)
     document.getElementById("boxes").appendChild(newElement);
 }
+
+// need a Button to add more Boxes with only one click !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// need a text field to add Items to a Box (only on Box X own Page?) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 toggle.addEventListener('click', () => {
     toggle.classList.toggle('active')
