@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #fcba03;
+}
+
+html, body{
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color:#111;
+}
+
+header .logo{
+    position:absolute;
+    margin-left: 40px;
+    margin-top: 0;
+    font-size: 4rem;
+    font-weight: 800;
+    z-index: 20;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    padding: 100px;
+    margin-top: 20px;
+}
+
+section h1{
+    font-size: 3rem;
+}
+
+.toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color) url(../images/menue.png);
+
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 20;
+    cursor: pointer;
+}
+
+.toggle.active{
+    background: var(--primary-color) url(../images/close.png);
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    position: fixed;
+    top:0;
+    left: 100%; /*means it is out of view*/
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation.active{
+    left: 0; /*means it is in view*/
+}
+
+.navigation ul{
+    position: relative;
+}
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.navigation ul li a {
+    font-size: 5rem;
+    color: #111;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navigation ul li a:hover{
+    color: var(--primary-color);
+}
+
+.boxes{
+    cursor: pointer;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.boxes .box {
+    padding: 30px;
+}
+.boxes .box ul{
+    list-style-type: lower-alpha;
+}
+
+.boxes .box li{
+    position: relative;
+    left: -20px;
+}
+
+/*Box Schatten wenn man über ein box aus der klasse boxes fährt, bekommt der box einen Schatten und man sieht auf welchem box man sich befindet*/
+.boxes .box:hover {
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #888;
+    background: var(--primary-color);
+}
+
+.boxes .box h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #1b206e;
+}
+.boxes .box .icon img {
+    max-width: 100px;
+}
+
+@media(max-width:1000px){
+    .boxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
