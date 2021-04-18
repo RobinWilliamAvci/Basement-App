@@ -28,6 +28,7 @@ for (i = 0; i < boxesAmount; i++) {
     var newList= document.createElement("ul");
     newList.id = "items";
     var newListElement = document.createElement("li");
+    //maybe for more than 4 items add a "more..." Link and a own page for each "box"? and  only show the first first XXX Letters
     newElement.append(newList);
     newList.append(newListElement)
     document.getElementById("boxes").appendChild(newElement);
