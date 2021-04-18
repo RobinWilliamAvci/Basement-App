@@ -44,7 +44,7 @@ section h1{
     right: 0;
     width: 80px;
     height: 80px;
-    background: var(--primary-color) url(../images/menue.png);
+    background: var(--primary-color) url(../images/menue.png); /*wont show on Iphones maybe have to work with webfont icons*/
 
     background-size: 40px;
     background-position: center;
@@ -55,7 +55,7 @@ section h1{
 }
 
 .toggle.active{
-    background: var(--primary-color) url(../images/close.png);
+    background: var(--primary-color) url(../images/close.png); /*wont show on Iphones maybe have to work with webfont icons*/
     background-size: 50px;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,6 +84,7 @@ section h1{
     position: relative;
     list-style: none;
     text-align: center;
+    left: -20px; /*isn't in the middle why the fuck ever !!!*/
 }
 
 .navigation ul li a {
@@ -101,6 +102,7 @@ section h1{
     cursor: pointer;
     margin-top: 40px;
     display: flex;
+    /*gap: 10%; would increase the gab between the flex-boxes*/
     flex-wrap: wrap;
     /*display: grid;*/
     /*grid-template-columns: 1fr 1fr 1fr;*/
