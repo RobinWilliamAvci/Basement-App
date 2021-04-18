@@ -142,4 +142,9 @@ section h1{
     .boxes{
         grid-template-columns: repeat(2, 1fr);
     }
+    .boxes .box {
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px #888;
+        background: var(--primary-color);
+    }
 }

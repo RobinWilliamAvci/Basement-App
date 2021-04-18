@@ -29,7 +29,7 @@ for (i = 0; i < boxesAmount; i++) {
     newList.id = "items";
     var newListElement = document.createElement("li");
 
-    //maybe for more than 4 items add a "more..." Link and a own page for each "box"? and  only show the first first XXX (8) Letters !!!!!!!
+    //maybe for more than 3 items add a "more..." Link and a own page for each "box"? and  only show the first first XXX (8) Letters !!!!!!!
 
     newElement.append(newList);
     newList.append(newListElement)
