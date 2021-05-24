@@ -136,7 +136,8 @@ section h1{
     margin-top: 20px;
     color: #1b206e;
 }
-.boxes .box .icon img {
+
+.boxes .icon img {
     max-width: 100px;
 }
 

@@ -43,3 +43,10 @@ toggle.addEventListener('click', () => {
     toggle.classList.toggle('active')
     navigation.classList.toggle('active')
 })
+
+add = document.getElementById("add-box");
+
+add.addEventListener('click', ()=>{
+    newBox = boxes.length +1;
+    boxes.push(newBox);
+})
